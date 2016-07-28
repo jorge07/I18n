@@ -1,0 +1,10 @@
+version: '2'
+services:
+    i18n:
+        build: etc/docker/dev
+        container_name: i18n
+        ports:
+            - 3000:3000
+        volumes:
+            - .:/app
+        command: meteor
